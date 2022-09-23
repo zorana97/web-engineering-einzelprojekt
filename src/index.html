@@ -5,12 +5,41 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <title><%= htmlWebpackPlugin.options.title %></title>
     <meta name="description" content="" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="stylesheet" href="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   </head>
   <body>
     <h1><%= htmlWebpackPlugin.options.title %></h1>
 
     <div id="app"></div>
+
+    <div class="container">
+      <div class="navbar">
+        <nav>
+          <ul>
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./about.html">About</a></li>
+            <li><a href="./content.html">Content</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div class="dice-div">
+        <img id="dices" alt="menu-icon" class="dices" />
+        <p>Click on the dices to generate a new fun acivity to do!</p>
+        <div class="div">
+          <div id="activity" class="activity"></div>
+          <img id="heart" class="heart" />
+        </div>
+        <h3>Your favorite activity list:</h3>
+        <div class="list">
+          <ul id="favoritesList">
+            <li class="list-favorites">
+              Learn a new language<span class="delete-favorite">x</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div id="activity-list-div" class="activity-list-div"></div>
+    </div>
   </body>
 </html>
