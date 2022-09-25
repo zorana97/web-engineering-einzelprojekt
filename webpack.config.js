@@ -12,7 +12,7 @@ module.exports = {
   entry: {
     index: path.resolve(__dirname, "./src/index.js"),
     about: path.resolve(__dirname, "./src/about.js"),
-    content: path.resolve(__dirname, "./src/content.js"),
+    signUp: path.resolve(__dirname, "./src/signUp.js"),
   },
 
   // 2
@@ -54,10 +54,10 @@ module.exports = {
       filename: "about.html",
     }),
     new HtmlWebpackPlugin({
-      template: path.resolve(__dirname, "./src/content.html"),
+      template: path.resolve(__dirname, "./src/signUp.html"),
       inject: true,
-      chunks: ["content"],
-      filename: "content.html",
+      chunks: ["signUp"],
+      filename: "signUp.html",
     }),
   ],
 
