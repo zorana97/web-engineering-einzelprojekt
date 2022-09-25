@@ -1,8 +1,8 @@
 //CSS
-import "./styles/main.css";
-import dicesImg from "./assets/dices.png";
+import "../styles/main.css";
+import dicesImg from "../assets/dices.png";
 import generateActivity from "./generateActivity";
-import heartImg from "./assets/heart.png";
+import heartImg from "../assets/heart.png";
 import manageFavorites from "./manageFavorites";
 
 //Generate activity

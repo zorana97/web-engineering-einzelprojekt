@@ -10,9 +10,9 @@ module.exports = {
   // If the src/index.js file imports other JS files,
   // bundle them as well
   entry: {
-    index: path.resolve(__dirname, "./src/index.js"),
-    about: path.resolve(__dirname, "./src/about.js"),
-    signUp: path.resolve(__dirname, "./src/signUp.js"),
+    index: path.resolve(__dirname, "./src/scripts/index.js"),
+    about: path.resolve(__dirname, "./src/scripts/about.js"),
+    signUp: path.resolve(__dirname, "./src/scripts/signUp.js"),
   },
 
   // 2
@@ -45,16 +45,16 @@ module.exports = {
       title: "Web engineering Einzelprojekt",
       inject: true,
       chunks: ["index"],
-      template: path.resolve(__dirname, "./src/index.html"),
+      template: path.resolve(__dirname, "./src/pages/index.html"),
     }),
     new HtmlWebpackPlugin({
-      template: path.resolve(__dirname, "./src/about.html"),
+      template: path.resolve(__dirname, "./src/pages/about.html"),
       inject: true,
       chunks: ["about"],
       filename: "about.html",
     }),
     new HtmlWebpackPlugin({
-      template: path.resolve(__dirname, "./src/signUp.html"),
+      template: path.resolve(__dirname, "./src/pages/signUp.html"),
       inject: true,
       chunks: ["signUp"],
       filename: "signUp.html",

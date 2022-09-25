@@ -1,4 +1,4 @@
-import "./styles/main.css";
+import "../styles/main.css";
 
 const signUpBtn = document.getElementById("signUpBtn");
 const username = document.getElementById("username");
@@ -66,7 +66,7 @@ const validateInputs = () => {
   if (passwordValue === "") {
     setError(password, "Password is required");
   } else if (passwordValue.length < 5) {
-    setError(password, "Password must be at least 5 character.");
+    setError(password, "Password must be at least 5 character");
   } else {
     setSuccess(password);
   }
