@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title><%= htmlWebpackPlugin.options.title %></title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  </head>
+  <body>
+    <h1>Become a member</h1>
+
+    <div id="app"></div>
+
+    <div class="container">
+      <div class="navbar">
+        <nav>
+          <ul>
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./about.html">About</a></li>
+            <li><a href="./signUp.html">Sign up</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div id="form">
+        <h1>Registration</h1>
+        <div class="input-control">
+          <label for="username">Username</label>
+          <input id="username" name="username" type="text" />
+          <div class="error"></div>
+        </div>
+        <div class="input-control">
+          <label for="age">Age</label>
+          <input id="age" name="age" type="number" />
+          <div class="error"></div>
+        </div>
+        <div class="input-control">
+          <label for="email">Email</label>
+          <input id="email" name="email" type="email" />
+          <div class="error"></div>
+        </div>
+        <div class="input-control">
+          <label for="password">Password</label>
+          <input id="password" name="password" type="password" />
+          <div class="error"></div>
+        </div>
+        <button id="signUpBtn" class="signUpBtn">Sign Up</button>
+      </div>
+    </div>
+  </body>
+</html>
